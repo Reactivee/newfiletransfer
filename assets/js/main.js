@@ -61,111 +61,57 @@ head.js("assets/js/search/jquery.quicksearch.js", function() {
 //-------------------------------------------------------------
 
 
+// //TOOL TIP
 
-//EASY PIE CHART
-head.js("assets/js/gage/jquery.easypiechart.min.js", function() {
+// head.js("assets/js/tip/jquery.tooltipster.js", function() {
 
-    $(function() {
+//     $('.tooltip-tip-x').tooltipster({
+//         position: 'right'
 
-        $('.chart').easyPieChart({
-            easing: 'easeOutBounce',
-            trackColor: '#ffffff',
-            scaleColor: '#ffffff',
-            barColor: '#FF0064',
-            onStep: function(from, to, percent) {
-                $(this.el).find('.percent').text(Math.round(percent));
-            }
-        });
-        var chart = window.chart = $('.chart').data('easyPieChart');
-        $('.js_update').on('click', function() {
-            chart.update(Math.random() * 100);
-        });
+//     });
 
-        $('.speed-car').easyPieChart({
-            easing: 'easeOutBounce',
-            trackColor: 'rgba(0,0,0,0.3)',
-            scaleColor: 'transparent',
-            barColor: '#0085DF',
+//     $('.tooltip-tip').tooltipster({
+//         position: 'right',
+//         animation: 'slide',
+//         theme: '.tooltipster-shadow',
+//         delay: 1,
+//         offsetX: '-12px',
+//         onlyOne: true
 
-            lineWidth: 8,
-            onStep: function(from, to, percent) {
-                $(this.el).find('.percent2').text(Math.round(percent));
-            }
-        });
-        var chart = window.chart = $('.chart2').data('easyPieChart');
-        $('.js_update').on('click', function() {
-            chart.update(Math.random() * 100);
-        });
-        $('.overall').easyPieChart({
-            easing: 'easeOutBounce',
-            trackColor: 'rgba(0,0,0,0.3)',
-            scaleColor: '#323A45',
-            lineWidth: 35,
-            lineCap: 'butt',
-            barColor: '#FFB900',
-            onStep: function(from, to, percent) {
-                $(this.el).find('.percent3').text(Math.round(percent));
-            }
-        });
-    });
+//     });
+//     $('.tooltip-tip2').tooltipster({
+//         position: 'right',
+//         animation: 'slide',
+//         offsetX: '-12px',
+//         theme: '.tooltipster-shadow',
+//         onlyOne: true
 
-});
-//-------------------------------------------------------------
-
-//TOOL TIP
-
-head.js("assets/js/tip/jquery.tooltipster.js", function() {
-
-    $('.tooltip-tip-x').tooltipster({
-        position: 'right'
-
-    });
-
-    $('.tooltip-tip').tooltipster({
-        position: 'right',
-        animation: 'slide',
-        theme: '.tooltipster-shadow',
-        delay: 1,
-        offsetX: '-12px',
-        onlyOne: true
-
-    });
-    $('.tooltip-tip2').tooltipster({
-        position: 'right',
-        animation: 'slide',
-        offsetX: '-12px',
-        theme: '.tooltipster-shadow',
-        onlyOne: true
-
-    });
-    $('.tooltip-top').tooltipster({
-        position: 'top'
-    });
-    $('.tooltip-right').tooltipster({
-        position: 'right'
-    });
-    $('.tooltip-left').tooltipster({
-        position: 'left'
-    });
-    $('.tooltip-bottom').tooltipster({
-        position: 'bottom'
-    });
-    $('.tooltip-reload').tooltipster({
-        position: 'right',
-        theme: '.tooltipster-white',
-        animation: 'fade'
-    });
-    $('.tooltip-fullscreen').tooltipster({
-        position: 'left',
-        theme: '.tooltipster-white',
-        animation: 'fade'
-    });
-    //For icon tooltip
-
-
-
-});
-//------------------------------------------------------------- 
+//     });
+//     $('.tooltip-top').tooltipster({
+//         position: 'top'
+//     });
+//     $('.tooltip-right').tooltipster({
+//         position: 'right'
+//     });
+//     $('.tooltip-left').tooltipster({
+//         position: 'left'
+//     });
+//     $('.tooltip-bottom').tooltipster({
+//         position: 'bottom'
+//     });
+//     $('.tooltip-reload').tooltipster({
+//         position: 'right',
+//         theme: '.tooltipster-white',
+//         animation: 'fade'
+//     });
+//     $('.tooltip-fullscreen').tooltipster({
+//         position: 'left',
+//         theme: '.tooltipster-white',
+//         animation: 'fade'
+//     });
+//     //For icon tooltip
+// });
+// //------------------------------------------------------------- 
 
 //NICE SCROLL
 
@@ -190,84 +136,84 @@ head.js("assets/js/nano/jquery.nanoscroller.js", function() {
 
 
 //------------------------------------------------------------- 
-//PAGE LOADER
-head.js("assets/js/pace/pace.js", function() {
+// //PAGE LOADER
+// head.js("assets/js/pace/pace.js", function() {
 
-    paceOptions = {
-        ajax: false, // disabled
-        document: false, // disabled
-        eventLag: false, // disabled
-        elements: {
-            selectors: ['.my-page']
-        }
-    };
+//     paceOptions = {
+//         ajax: false, // disabled
+//         document: false, // disabled
+//         eventLag: false, // disabled
+//         elements: {
+//             selectors: ['.my-page']
+//         }
+//     };
 
-});
+// });
 
 //------------------------------------------------------------- 
 
-//SPARKLINE CHART
-head.js("assets/js/chart/jquery.sparkline.js", function() {
+// //SPARKLINE CHART
+// head.js("assets/js/chart/jquery.sparkline.js", function() {
 
-    $(function() {
-        $('.inlinebar').sparkline('html', {
-            type: 'bar',
-            barWidth: '8px',
-            height: '30px',
-            barSpacing: '2px',
-            barColor: '#A8BDCF'
-        });
-        $('.linebar').sparkline('html', {
-            type: 'bar',
-            barWidth: '5px',
-            height: '30px',
-            barSpacing: '2px',
-            barColor: '#44BBC1'
-        });
-        $('.linebar2').sparkline('html', {
-            type: 'bar',
-            barWidth: '5px',
-            height: '30px',
-            barSpacing: '2px',
-            barColor: '#AB6DB0'
-        });
-        $('.linebar3').sparkline('html', {
-            type: 'bar',
-            barWidth: '5px',
-            height: '30px',
-            barSpacing: '2px',
-            barColor: '#19A1F9'
-        });
-    });
+//     $(function() {
+//         $('.inlinebar').sparkline('html', {
+//             type: 'bar',
+//             barWidth: '8px',
+//             height: '30px',
+//             barSpacing: '2px',
+//             barColor: '#A8BDCF'
+//         });
+//         $('.linebar').sparkline('html', {
+//             type: 'bar',
+//             barWidth: '5px',
+//             height: '30px',
+//             barSpacing: '2px',
+//             barColor: '#44BBC1'
+//         });
+//         $('.linebar2').sparkline('html', {
+//             type: 'bar',
+//             barWidth: '5px',
+//             height: '30px',
+//             barSpacing: '2px',
+//             barColor: '#AB6DB0'
+//         });
+//         $('.linebar3').sparkline('html', {
+//             type: 'bar',
+//             barWidth: '5px',
+//             height: '30px',
+//             barSpacing: '2px',
+//             barColor: '#19A1F9'
+//         });
+//     });
 
-    $(function() {
-        var sparklineLogin = function() {
-            $('#sparkline').sparkline(
-                [5, 6, 7, 9, 9, 5, 3, 2, 2, 4, 6, 7], {
-                    type: 'line',
-                    width: '100%',
-                    height: '25',
-                    lineColor: '#ffffff',
-                    fillColor: '#0DB8DF',
-                    lineWidth: 1,
-                    spotColor: '#ffffff',
-                    minSpotColor: '#ffffff',
-                    maxSpotColor: '#ffffff',
-                    highlightSpotColor: '#ffffff',
-                    highlightLineColor: '#ffffff'
-                }
-            );
-        }
-        var sparkResize;
-        $(window).resize(function(e) {
-            clearTimeout(sparkResize);
-            sparkResize = setTimeout(sparklineLogin, 500);
-        });
-        sparklineLogin();
-    });
+//     $(function() {
+//         var sparklineLogin = function() {
+//             $('#sparkline').sparkline(
+//                 [5, 6, 7, 9, 9, 5, 3, 2, 2, 4, 6, 7], {
+//                     type: 'line',
+//                     width: '100%',
+//                     height: '25',
+//                     lineColor: '#ffffff',
+//                     fillColor: '#0DB8DF',
+//                     lineWidth: 1,
+//                     spotColor: '#ffffff',
+//                     minSpotColor: '#ffffff',
+//                     maxSpotColor: '#ffffff',
+//                     highlightSpotColor: '#ffffff',
+//                     highlightLineColor: '#ffffff'
+//                 }
+//             );
+//         }
+//         var sparkResize;
+//         $(window).resize(function(e) {
+//             clearTimeout(sparkResize);
+//             sparkResize = setTimeout(sparklineLogin, 500);
+//         });
+//         sparklineLogin();
+//     });
 
 
-});
+// });
 
 //------------------------------------------------------------- 
 

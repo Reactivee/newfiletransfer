@@ -2129,7 +2129,7 @@ img.sidebar-icon {
         margin: 0 0 0 30px!important;
     }
     #skin-select #toggle {
-        display: none!important;
+        display: block;        
     }
     #skin-select {
         left:-250px!important;
@@ -2149,6 +2149,7 @@ img.sidebar-icon {
     .wrap-fluid {
         float: right!important;
         width: 100%!important;
+        /*margin-left: 0px!important;*/
     }
     #skin-select li {
         text-align: right!important;
@@ -2162,6 +2163,7 @@ img.sidebar-icon {
     .tooltip-tip2, .tooltip-tip {
         display: block!important;
     }
+
     #nt-title-container {
         margin: 15px 0 20px !important;
     }
@@ -2483,3 +2485,6 @@ border-radius: 15px;
 .btn_accordion:hover{
     background-color: #D8D8D8;
 }
+  .tooltip-tip2 span{
+    display: flex;
+    }

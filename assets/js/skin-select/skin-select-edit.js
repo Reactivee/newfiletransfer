@@ -24,8 +24,8 @@ $(document).ready(function() {
 			$(this).addClass('active')
 
 			//$('#skin-select').animate({ left:-200 }, 100);
-			$('#skin-select').css({"left":"-200px"});
-
+			$('#skin-select').css({"left":"-100px"});
+			// $("#skin-select #toggle").css({"display":"block"});
 			$('.wrap-fluid').css({"float":"right", "width":"100%"});
 			$('#skin-select li').css({"text-align":"right"});
 			$('#skin-select li span, ul.topnav h4').css({"display":"none"});
@@ -42,18 +42,18 @@ $(document).ready(function() {
 		}if ($(window).width() <= 767) {
 
 
-        	$('#skin-select').css({"left":"-200px"});
+   //      	// $('#skin-select').css({"left":"-200px"});
 
-			$('.wrap-fluid').css({"float":"right", "width":"100%"});
-			$('#skin-select li').css({"text-align":"right"});
-			$('#skin-select li span, ul.topnav h4').css({"display":"none"});
-			$('body').css({"padding-left":"40px"});
-			$('.tooltip-tip2').tooltipster('enable');
-			$('.tooltip-tip').tooltipster('enable');
-			$('.datepicker-wrap').css({"position":"absolute", "right":"84px"});
+			// $('.wrap-fluid').css({"float":"right", "width":"100%"});
+			// $('#skin-select li').css({"text-align":"right"});
+			// $('#skin-select li span, ul.topnav h4').css({"display":"none"});
+			// $('body').css({"padding-left":"40px"});
+			// $('.tooltip-tip2').tooltipster('enable');
+			// $('.tooltip-tip').tooltipster('enable');
+			// $('.datepicker-wrap').css({"position":"absolute", "right":"84px"});
        
-            $('.tooltip-tip2').tooltipster('enable');
-            $('.tooltip-tip').tooltipster('enable');
+   //          $('.tooltip-tip2').tooltipster('enable');
+   //          $('.tooltip-tip').tooltipster('enable');
           
 
 
