@@ -187,7 +187,7 @@ ul{
     width: 165px!important;
 }
 .dropdown-setting:after {
-    border-color: #FFFFFF rgba(0, 0, 0, 0);
+    /*border-color: #FFFFFF rgba(0, 0, 0, 0);
     border-style: solid;
     border-width: 0 13px 13px;
     content:"";
@@ -197,7 +197,7 @@ ul{
     position: absolute;
     top: -10px;
     width: 0;
-    z-index: 1;
+    z-index: 1;*/
 }
 .dropdown-menu.dropdown-wrap b {
     background: none repeat scroll 0 0 #A8BDCF;
@@ -2121,6 +2121,9 @@ img.sidebar-icon {
         padding-right: 15px;
         position: relative;
     }
+    .skin-part{
+        margin-top: 40px;
+    }
     #paper-top {
         padding: 0 20px 0 30px !important;
         height: auto;
@@ -2132,8 +2135,9 @@ img.sidebar-icon {
         display: block;        
     }
     #skin-select {
-        left:-250px!important;
-        top: 31px!important;
+        left:-250px;  
+        /*edited*/
+        top: 31px;
     }
     #menu-showhide, .menu-left-nest {
         border-radius: 0 !important;
@@ -2147,22 +2151,22 @@ img.sidebar-icon {
         margin: 0 10px!important;
     }
     .wrap-fluid {
-        float: right!important;
-        width: 100%!important;
+        /*float: right!important;*/
+        /*width: 100%;*/
         /*margin-left: 0px!important;*/
     }
-    #skin-select li {
+  /*  #skin-select li {
         text-align: right!important;
-    }
-    #skin-select li span, ul.topnav h4, .noft-blue, .noft-blue-number, .noft-purple-number, .dark, .side-dash, .dropdown-wrap:after, .dropdown-setting:after, .widget-menu-hide, .config-wrap {
+    }*/
+    /*#skin-select li span, ul.topnav h4, .noft-blue, .noft-blue-number, .noft-purple-number, .dark, .side-dash, .dropdown-wrap:after, .dropdown-setting:after, .widget-menu-hide, .config-wrap {
         display: none!important;
-    }
+    }*/
     body {
-        padding-left:50px!important;
+        /*padding-left:50px!important;*/
     }
-    .tooltip-tip2, .tooltip-tip {
+    /*.tooltip-tip2, .tooltip-tip {
         display: block!important;
-    }
+    }*/
 
     #nt-title-container {
         margin: 15px 0 20px !important;
@@ -2174,7 +2178,11 @@ img.sidebar-icon {
         margin-left: 0!important;
     }
     .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+        position: relative;
+        z-index: 500;
         margin: 0!important;
+        /*margin-left: 50px;*/
+        padding-left: 80px;
     }
     .dropdown-menu .divider {
         background-color: rgba(0, 0, 0, 0.2)!important;
