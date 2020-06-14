@@ -2360,7 +2360,7 @@ small.pull-right {
 /*Content*/
 
 .main_content, .full-items {
-    color: #979797;
+    color: black;
     background-color: white;
     padding: 15px;
     margin-top: 20px;
